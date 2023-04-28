@@ -64,7 +64,7 @@ module.exports.hello = async () => {
                 protocol: protocolMatch ? protocolMatch[1] : null,
                 responseLength: responseLengthMatch ? responseLengthMatch[1] : null,
             };
-        }).filter(ip => ip !== null);
+        }).filter(res => res !== null);
 
         return {
             statusCode: 200,
